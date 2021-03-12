@@ -1,0 +1,23 @@
+{
+  "name": "ragemaker",
+  "version": "1.0.0",
+  "description": "ragemaker.net is down (flash too) i try to create a clone of ragemaker.net with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benevolarX/ragemaker.git"
+  },
+  "author": "benevolarX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benevolarX/ragemaker/issues"
+  },
+  "homepage": "https://github.com/benevolarX/ragemaker#readme",
+  "dependencies": {
+    "konva": "^7.2.5",
+    "preact": "^10.5.12"
+  }
+}
