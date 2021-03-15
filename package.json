@@ -18,6 +18,7 @@
   "homepage": "https://github.com/benevolarX/ragemaker#readme",
   "dependencies": {
     "konva": "^7.2.5",
-    "preact": "^10.5.12"
+    "preact": "^10.5.13",
+    "xstate": "^4.16.2"
   }
 }
