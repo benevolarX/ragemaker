@@ -4,7 +4,8 @@
   "description": "ragemaker.net is down (flash too) i try to create a clone of ragemaker.net with JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "esbuild src/index.tsx --jsx-factory=h --bundle --minify --sourcemap --outfile=public/build/index.js --watch",
+    "build": "esbuild src/index.tsx --jsx-factory=h --bundle --minify --outfile=public/build/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "konva": "^7.2.5",
     "preact": "^10.5.13",
     "xstate": "^4.16.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.9.2"
   }
 }

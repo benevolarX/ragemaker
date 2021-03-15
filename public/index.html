@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-        <meta name="description" content="ragemaker, ragecomic, meme" />
-		<title>ragemaker</title>
-	</head>
-	<body>
-        <div class="body">
-			<canvas id="myCanvas" width="100" height="100"></canvas>
-			<button onclick="DownloadCanvasAsImage()">Download</button>
-		</div>
-		<script>
-			const canvas = document.getElementById('myCanvas');
-			const ctx = canvas.getContext('2d');
-			ctx.fillStyle = 'red';
-			ctx.fillRect(0,0,100,100);
-			ctx.lineWidth = 10;
-			ctx.strokeRect(20, 20, 60, 60);
 
-			function DownloadCanvasAsImage(){
-				let downloadLink = document.createElement('a');
-				downloadLink.setAttribute('download', 'CanvasAsImage.png');
-				let canvas = document.getElementById('myCanvas');
-			  let dataURL = canvas.toDataURL('image/png');
-			  let url = dataURL.replace(/^data:image\/png/,'data:application/octet-stream');
-				downloadLink.setAttribute('href',url);
-				downloadLink.click();
-			}
-		</script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<title>ragemaker</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+	<meta name="description" content="ragemaker, ragecomic, meme" />
+	<link rel="stylesheet" href="./style.css" />
+	<script defer src="./build/index.js"></script>
+</head>
+
+<body>
+</body>
+
 </html>
